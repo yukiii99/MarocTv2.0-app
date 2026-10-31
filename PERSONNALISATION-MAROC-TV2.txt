@@ -1,0 +1,19 @@
+# MarocTv2.0 — version personnalisée basée sur NuvioTV
+
+Cette archive conserve le code source du projet NuvioTV fourni, avec une personnalisation initiale de la marque :
+- nom affiché : MarocTv2.0 ;
+- icône Android et icône de notification : logo MarocTv2.0 fourni ;
+- identifiant d’application Android : `com.marociptv.app` (variante full) et `com.marociptv.app.playstore` (variante playstore) ;
+- namespace Kotlin/Android interne conservé (`com.nuvio.tv`) pour éviter de casser les références de ressources et imports.
+
+## Important avant compilation et distribution
+
+1. Cette archive est une adaptation de marque du dépôt NuvioTV, pas une compilation vérifiée. Aucune APK n'a été générée ni testée ici.
+2. Le projet NuvioTV utilise des services et configurations externes (authentification, synchronisation, APIs, liens de connexion, etc.). Changer le nom et l'icône ne transfère pas ces services vers MarocTv2.0. Il faut vérifier et configurer chaque backend/API autorisé avant de compter sur ces fonctions.
+3. Les paramètres locaux et secrets de développement ne sont pas fournis. Ne publiez jamais de clés privées, mots de passe ou jetons dans GitHub.
+4. La licence GPL-3.0 et les avis de copyright d'origine sont conservés. Toute distribution du binaire ou du code modifié doit respecter la GPL-3.0, notamment fournir le code source correspondant et conserver les mentions requises. Consultez `LICENSE` et les avis dans le dépôt.
+5. L'identifiant d'application a changé : Android considérera cette application comme distincte d'une installation précédente ayant un autre identifiant.
+
+## Étapes suivantes
+
+Ouvrir le projet dans Android Studio, configurer les dépendances et services nécessaires, puis lancer une compilation de test. Corriger les erreurs remontées par Gradle avant de distribuer l'APK.
